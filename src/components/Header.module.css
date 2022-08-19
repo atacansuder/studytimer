@@ -1,0 +1,15 @@
+.container{
+    width: 100%;
+}
+
+.title{
+    font-size: 24px;
+}
+
+.title:hover{
+    cursor: pointer;
+}
+
+.title_link{
+    text-decoration: none;
+}
