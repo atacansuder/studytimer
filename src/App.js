@@ -1,8 +1,13 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Header from "./components/Header";
+import Timer from "./components/Timer";
+import { useState } from "react";
+import Tasks from "./components/Tasks";
 
 function App() {
+  const [pomodorosPassed, setPomodorosPassed] = useState(0);
+
   return (
     <div className="App">
       {/* <header className="App-header">
@@ -20,6 +25,10 @@ function App() {
         </a>
       </header> */}
       <Header />
+      <div className="main_container">
+        <Timer setPomodoros={setPomodorosPassed} />
+        <Tasks />
+      </div>
     </div>
   );
 }

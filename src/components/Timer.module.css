@@ -1,0 +1,56 @@
+.timer_container{
+    margin-top: 25px;
+    max-width: 550px;
+}
+
+.base_timer{
+    position: relative;
+    height: 300px;
+    width: 300px;
+}
+
+.base_timer__circle{
+    fill: none;
+    stroke: none;
+}
+
+.base_timer__circle_elapsed{
+  stroke-width: 2px;
+  stroke: rgb(222, 222, 222);
+}
+
+.base_timer__time{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 48px;
+    cursor: default;
+}
+
+.button_paused, .button_unpaused{
+    height: 55px;
+    width: 150px;
+    margin: 20px 0px 0px;
+    padding: 0px 12px;
+
+    border: 0;
+    border-radius: 5px;
+
+    background-color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    color: rgb(200, 75, 50);
+    cursor: pointer;
+}.button_paused{
+    box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+}.button_unpaused{
+    transform: translateY(6px);
+}
