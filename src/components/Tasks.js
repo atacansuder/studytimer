@@ -5,10 +5,13 @@ import TaskItem from "./TaskItem";
 import styles from "./Tasks.module.css";
 
 function Tasks() {
+  // TODO: increase this variable when a pomodoro ends
+  // !!IMPORTANT!! This state is also present in App.js so think about the overall architecture !!IMPORTANT!!
   const [pomodorosPassed, setPomodorosPassed] = useState(0);
   const [tasks, setTasks] = useState([]);
   const [addingTask, setAddingTask] = useState(false);
 
+  // Generate a unique ID from random number to avoid using index as key
   const generateUniqueId = () => {
     return Math.floor((Date.now() / Math.random()) * 100);
   };

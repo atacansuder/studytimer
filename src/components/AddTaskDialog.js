@@ -16,6 +16,12 @@ function AddTaskDialog({ cancel, addTask }) {
       setTask({ ...task, estimated_pomodoros: task.estimated_pomodoros - 1 });
   };
 
+  const confirmTask = () => {
+    if (task.name === "") return;
+    addTask(task);
+    setTask({ id: null, name: "", estimated_pomodoros: 1 });
+  };
+
   return (
     <div className={styles.container}>
       <input
@@ -64,11 +70,7 @@ function AddTaskDialog({ cancel, addTask }) {
           Cancel
         </button>
         <button
-          onClick={(e) => {
-            if (task.name === "") return;
-            addTask(task);
-            setTask({ id: null, name: "", estimated_pomodoros: 1 });
-          }}
+          onClick={confirmTask}
           disabled={task.name === ""}
           className={styles.add_button}
         >

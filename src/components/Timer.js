@@ -15,11 +15,12 @@ function Timer({ setPomodoros }) {
   const [paused, setPaused] = useState(true);
 
   useEffect(() => {
+    // This creates an interval of 1 second that reduces the time by 1000 ms and updates the time string & circle progress accordingly
     const intervalId = setInterval(() => {
       if (paused) return;
       setTime((time) => time - 1000);
       setParsedTime(parseTime(time));
-      setCircleProgress("-" + JSON.stringify(251.3 - calculateOffset(time)));
+      setCircleProgress("-" + JSON.stringify(251.3 - calculateOffset(time))); // Calculate from the default 251.3 value
     }, 1000);
 
     return () => clearInterval(intervalId);

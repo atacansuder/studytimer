@@ -6,6 +6,8 @@ import { useState } from "react";
 import Tasks from "./components/Tasks";
 
 function App() {
+  // Not sure if keeping this state in the App file is a good idea
+  // TODO: think more about the architecture before implementing this
   const [pomodorosPassed, setPomodorosPassed] = useState(0);
 
   return (

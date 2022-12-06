@@ -1,7 +1,8 @@
 import styles from "./TaskItem.module.css";
 import { MdCheckCircle, MdCheckCircleOutline, MdDelete } from "react-icons/md";
-import { useState } from "react";
 
+// TODO: Clicking the Check Circle should end the task early if the user chooses to do so.
+// Also add an option to reverse the decision incase the user clicked it accidentally.
 function TaskItem({ data, pomodorosPassed, deleteTask }) {
   return (
     <div className={styles.container}>
