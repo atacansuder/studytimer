@@ -2,12 +2,16 @@ import styles from "./AddTaskDialog.module.css";
 import { MdKeyboardArrowUp, MdKeyboardArrowDown } from "react-icons/md";
 import { useState } from "react";
 
+class Task {
+  constructor() {
+    this.id = null;
+    this.name = "";
+    this.estimated_pomodoros = 1;
+  }
+}
+
 function AddTaskDialog({ cancel, addTask }) {
-  const [task, setTask] = useState({
-    id: null,
-    name: "",
-    estimated_pomodoros: 1,
-  });
+  const [task, setTask] = useState(new Task());
 
   const changePomodoroValue = (mode) => {
     if (mode === "increase")
@@ -19,7 +23,7 @@ function AddTaskDialog({ cancel, addTask }) {
   const confirmTask = () => {
     if (task.name === "") return;
     addTask(task);
-    setTask({ id: null, name: "", estimated_pomodoros: 1 });
+    setTask(new Task());
   };
 
   return (
