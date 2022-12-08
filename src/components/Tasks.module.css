@@ -26,3 +26,10 @@
 .empty_message{
     font-size: 24px;
 }
+
+/* 90% of 611px is 550px so the transition from wide screen to a small one is smooth */ 
+@media (max-width: 611px) {
+    .container{
+        width: 90%;
+    }
+}

@@ -56,3 +56,9 @@
     cursor: pointer;
     color: rgb(215, 215, 215);
 }
+
+@media (max-width: 350px) {
+    .title{
+        font-size: 18px;
+    }
+}

@@ -45,13 +45,14 @@
 
     font-size: 18px;
 }
+
+/* Hide HTML number input arrows */ 
 /* Chrome, Safari, Edge, Opera */
 .pomodoro_count_input::-webkit-outer-spin-button,
 .pomodoro_count_input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
 /* Firefox */
 .pomodoro_count_input[type=number] {
   -moz-appearance: textfield;
