@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/studytimer/static/css/main.779ea80f.css",
-    "main.js": "/studytimer/static/js/main.2108cdb4.js",
+    "main.js": "/studytimer/static/js/main.74fba295.js",
     "static/js/787.5bb859f3.chunk.js": "/studytimer/static/js/787.5bb859f3.chunk.js",
     "static/media/logo.svg": "/studytimer/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/studytimer/index.html",
     "main.779ea80f.css.map": "/studytimer/static/css/main.779ea80f.css.map",
-    "main.2108cdb4.js.map": "/studytimer/static/js/main.2108cdb4.js.map",
+    "main.74fba295.js.map": "/studytimer/static/js/main.74fba295.js.map",
     "787.5bb859f3.chunk.js.map": "/studytimer/static/js/787.5bb859f3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.779ea80f.css",
-    "static/js/main.2108cdb4.js"
+    "static/js/main.74fba295.js"
   ]
 }
