@@ -3,7 +3,11 @@ import { MdAddCircle } from "react-icons/md";
 
 function AddTaskButton({ action }) {
   return (
-    <button onClick={(e) => action(true)} className={styles.button}>
+    <button
+      onClick={(e) => action(true)}
+      id="new_task_button"
+      className={styles.button}
+    >
       <MdAddCircle size={28} />
       Add task
     </button>

@@ -56,12 +56,14 @@ function AddTaskDialog({ cancel, addTask }) {
           <div className={styles.pomodoro_button_container}>
             <button
               className={styles.change_number_button}
+              id="increase_est_button"
               onClick={(e) => changePomodoroValue("increase")}
             >
               <MdKeyboardArrowUp size={24} />
             </button>
             <button
               className={styles.change_number_button}
+              id="decrease_est_button"
               onClick={(e) => changePomodoroValue("decrease")}
             >
               <MdKeyboardArrowDown size={24} />
@@ -76,6 +78,7 @@ function AddTaskDialog({ cancel, addTask }) {
         <button
           onClick={confirmTask}
           disabled={task.name === ""}
+          id="add_task_button"
           className={styles.add_button}
         >
           Add task

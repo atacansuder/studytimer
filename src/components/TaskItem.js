@@ -5,7 +5,7 @@ import { MdCheckCircle, MdCheckCircleOutline, MdDelete } from "react-icons/md";
 // Also add an option to reverse the decision incase the user clicked it accidentally.
 function TaskItem({ data, pomodorosPassed, deleteTask }) {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id={"task_item_" + data.id}>
       <div className={styles.name_container}>
         {data.completed ? (
           <MdCheckCircle
